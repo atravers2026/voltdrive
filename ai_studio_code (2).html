@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electric Vehicles | VoltDrive</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Modal Style for "Take the next step" */
+        #modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 1000; justify-content: center; align-items: center; }
+        .modal-content { background: white; padding: 40px; border-radius: 10px; text-align: center; max-width: 400px; position: relative; }
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="index.html" class="logo">VOLTDRIVE</a>
+        <div class="nav-links">
+            <a href="electric.html">Going Electric</a>
+            <a href="test-drive.html">Test Drive</a>
+        </div>
+    </nav>
+
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1200'); text-align: center; justify-content: center;">
+        <div class="hero-content" style="background: rgba(0,0,0,0.4);">
+            <h1>New All-Electric Volt Pulse</h1>
+            <p>Now available with £3,750 EV Government Grant</p>
+            <button onclick="document.getElementById('modal').style.display='flex'" class="btn-primary">Drive the Pulse</button>
+        </div>
+    </section>
+
+    <!-- Modal as seen in your 4th screenshot -->
+    <div id="modal">
+        <div class="modal-content">
+            <span onclick="this.parentElement.parentElement.style.display='none'" style="position:absolute; right:20px; top:10px; cursor:pointer;">&times;</span>
+            <h2>Take The Next Step</h2>
+            <p>Choose the vehicle that suits you and book a test drive.</p>
+            <div style="display: flex; gap: 10px; justify-content: center;">
+                <a href="#" class="btn-primary" style="background: #00004d;">Promotions</a>
+                <a href="test-drive.html" class="btn-primary" style="background: #00004d;">Test Drive</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
